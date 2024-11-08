@@ -57,7 +57,7 @@ img{
     background-color: rgb(0, 0, 0);
     height: 70px;
     width: 98vw;
-    border-radius: 16px;
+    border-radius: 12px;
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%; 
     align-items: center;
