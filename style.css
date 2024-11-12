@@ -1,6 +1,6 @@
 :root {
     --step--2: clamp(0.5208rem, 0.4237rem + 0.4855vi, 0.8rem);
-    --step--1: clamp(0.625rem, 0.4946rem + 0.6522vi, 1rem);
+    --step--1: clamp(0.625rem, 0.4946rem + 0.6522vi, 0.95rem);
     --step-0: clamp(0.75rem, 0.5761rem + 0.8696vi, 1.4rem);
     --step-1: clamp(0.9rem, 0.6696rem + 1.1522vi, 1.5625rem);
     --step-2: clamp(1.08rem, 0.7763rem + 1.5185vi, 1.9531rem);
@@ -102,13 +102,13 @@ img{
     background-color: black;
     border: 2px solid #702963;
     border-radius: 8px;
+    font-family: neuropolitical;
     font-size: var(--step--1);
     font-weight: 700;
     cursor: pointer;
     word-spacing: -1px;
     white-space: nowrap;
     overflow: hidden;
-    font-family: verdana;
     justify-content: center;
     align-items: center;
     margin-right: 30px;
@@ -127,6 +127,7 @@ img{
 
 
 .main_nav_ul li a{
+    font-family: neuropolitical;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -201,7 +202,7 @@ img{
 	display:inline-block;
 	cursor:pointer;
 	color:#f5c5ff;
-	font-family:verdana;
+	font-family: neuropolitical;
 	font-size:var(--step-0);
     white-space: nowrap;
     align-items: center;
