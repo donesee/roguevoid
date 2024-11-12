@@ -11,6 +11,15 @@
     --step-11: clamp(2rem, 4.2rem + 2vw, 4rem)
 }
 
+@font-face {
+    font-family: neuropolitical;
+    src: url(Fonts/neuropolitical.woff);
+}
+@font-face {
+    font-family: neuropolitical;
+    src: url(Fonts/neuropolitical.otf);
+}
+
 html{
     user-drag: none;
     -webkit-user-drag: none;
@@ -120,13 +129,13 @@ img{
 .main_nav_ul li a{
     text-decoration: none;
     color: white;
-    font-weight: boolds;
+    font-weight: bold;
     font-size: 1.2rem;
     line-height: 1.2;
     padding: 8px;
     white-space: nowrap;
     overflow: hidden;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
     
 }
 
@@ -151,6 +160,17 @@ img{
     gap: 30px;
     padding-bottom: 100px;
 }
+
+.content_1 h1{
+    font-family: neuropolitical;
+    font-weight: 700;
+    color: white;
+    font-size: var(--step-11);
+    line-height: 1;
+    letter-spacing: -2px;
+    word-spacing: 0px;
+    white-space: nowrap;
+}
     
 .cp{
     color:rgb(123, 98, 134) ;
@@ -168,16 +188,7 @@ img{
     font-weight: 400;
 }
 
-.content_1 h1{
-    font-family: Verdana;
-    font-weight: 700;
-    color: white;
-    font-size: var(--step-11);
-    line-height: 1;
-    letter-spacing: -2px;
-    word-spacing: 0px;
-    white-space: nowrap;
-}
+
 
 
 .hero-button {
