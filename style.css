@@ -82,7 +82,7 @@ h1{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    box-shadow: 0px 10px inset, 0 -10px 2rem rgba(255, 255, 255, 0.12) inset;
+    box-shadow: 0px 10px inset, 0 -10px 2rem rgba(255, 255, 255, 0.08) inset;
     z-index: 10;
 }
 
@@ -178,7 +178,7 @@ h1{
 .content_1{
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 90vh;
     margin: auto;
     justify-content: flex-end;
     align-items: center;
@@ -188,6 +188,7 @@ h1{
     background-repeat: no-repeat;
     gap: 30px;
     padding-bottom: 100px;
+    overflow: hidden;
 }
 
 .content_1 h1{
@@ -253,7 +254,7 @@ h1{
 
 .gap-1{
     height: 1px;
-    width: 100%;
+    width: 1005;
 
     
 }
@@ -266,16 +267,16 @@ h1{
 
 .gap-1::after, .gap-1::before{
     content: '';
-
+    overflow: hidden;
     position: absolute;
     background-image:  conic-gradient(from var(--angle), #180a15, #200e25, #15051d, #1f0c2b, #1e0a2b, #180720 );
     background-color: black;
     opacity: 1;
-    width: 100%;
+    width: 98vw;
     height: 1px;
     filter: blur(1.4rem);
-    padding: 6px;
-    animation: 20s spin linear infinite;
+   padding: 6px;
+    animation: 5s spin linear infinite;
 
 }
 @keyframes spin{
@@ -334,7 +335,6 @@ h1{
     content: '';
     position: absolute;
     background-image:  conic-gradient(from var(--angle), #130916, #140918, #190a20, #14091b, #1e0a2b, #130916 );
-    background-color: pink;
     opacity: 1;
     top: 50%;
     left: 50%;
@@ -345,8 +345,6 @@ h1{
     padding: 4px;
     z-index: -1;
     animation: 5s spin linear infinite;
-    box-shadow: 10px 5px 1rem rgba(255, 255, 255, 0.151);
-
 }
 
 
@@ -356,7 +354,7 @@ h1{
     height: 500px;
     border: rgba(255, 255, 255, 0.08) solid 2px;
     border-radius: 10px;
-    box-shadow: 5px 10px 20px rgba(112, 41, 99, 0.06);
+    box-shadow: 5px 10px 20px rgba(255, 255, 255, 0.01);
 }
 .c2p{
     font-size: 16px;
