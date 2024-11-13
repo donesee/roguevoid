@@ -29,6 +29,7 @@ html{
     -ms-user-select: none;
     scroll-behavior: smooth;
     background-color: black;
+    
 }
 
 *{
@@ -67,6 +68,7 @@ h1{
     overflow: hidden;
     justify-content: center;
     top: 18px;
+    z-index: 1;
     
 } 
 .st{
@@ -295,6 +297,7 @@ h1{
     background-color: #0a0a0a;
     padding-right: 50px;
     padding-left: 50px;
+
 }
 
 .ct{
@@ -305,21 +308,51 @@ h1{
     padding-bottom: 100px;
     padding-top: 100px;
     font-size: 1.5rem;
-    height: 100%;
-
+    height: max-content;
+    position: relative;
     
 
 }
 
 .cti{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: left;
+    
     flex-direction: column;
     gap: 20px;
-    padding-right: 43px;
+    margin-right: 43px;
+    background-color: rgba(253, 0, 0, 0.068);
+    padding: 16px;
+    border-radius: 16px;
+    z-index: 2;
 }
+
+
+.cti::after, .cti::before{
+    content: '';
+    position: absolute;
+    background-image:  conic-gradient(from var(--angle), #130916, #140918, #190a20, #14091b, #1e0a2b, #130916 );
+    background-color: pink;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    filter: blur(2rem);
+    padding: 4px;
+    z-index: -1;
+    animation: 5s spin linear infinite;
+    box-shadow: 10px 5px 1rem rgba(255, 255, 255, 0.151);
+
+}
+
+
 .pa{
+    position: relative;
+    z-index: 2;
     height: 500px;
     border: rgba(255, 255, 255, 0.08) solid 2px;
     border-radius: 10px;
